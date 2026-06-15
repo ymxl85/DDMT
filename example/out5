@@ -1,0 +1,127 @@
+Simplifying failure-inducing input...
+
+java printtokens.MR4_GenFollow stc.txt ftc.txt; ./../v5/pt5.exe < stc.txt > o1; ./../v5/pt5.exe < ftc.txt > o2
+***************MT****************
+[source tc] 
+[follow-up tc] 
+[source output] eof.
+[follow-up output] eof.
+Sat
+or.;
+U
+12
+
+
+java printtokens.MR4_GenFollow stc.txt ftc.txt; ./../v5/pt5.exe < stc.txt > o1; ./../v5/pt5.exe < ftc.txt > o2
+***************MT****************
+[source tc] or.;
+U
+12
+
+[follow-up tc] ;
+or.;
+;
+U
+12
+
+[source output] keyword,	"or".
+error,	".".
+identifier,	";U".
+numeric,	12.
+eof.
+[follow-up output] keyword,	"or".
+error,	".".
+identifier,	";;U".
+numeric,	12.
+eof.
+Vol
+
+dd: 11 deltas left: or.;
+U
+12
+
+
+
+dd (run #1): trying 5 + 6
+or.;
+
+java printtokens.MR4_GenFollow stc.txt ftc.txt; ./../v5/pt5.exe < stc.txt > o1; ./../v5/pt5.exe < ftc.txt > o2
+***************MT****************
+[source tc] or.;
+[follow-up tc] ;
+or.;
+[source output] keyword,	"or".
+error,	".".
+eof.
+[follow-up output] keyword,	"or".
+error,	".".
+eof.
+Sat
+U
+12
+
+
+java printtokens.MR4_GenFollow stc.txt ftc.txt; ./../v5/pt5.exe < stc.txt > o1; ./../v5/pt5.exe < ftc.txt > o2
+***************MT****************
+[source tc] U
+12
+
+[follow-up tc] ;
+U
+;
+12
+
+[source output] identifier,	"U".
+numeric,	12.
+eof.
+[follow-up output] identifier,	";U".
+numeric,	;12.
+eof.
+Vol
+
+dd: 6 deltas left: U
+12
+
+
+
+dd (run #2): trying 3 + 3
+U
+1
+java printtokens.MR4_GenFollow stc.txt ftc.txt; ./../v5/pt5.exe < stc.txt > o1; ./../v5/pt5.exe < ftc.txt > o2
+***************MT****************
+[source tc] U
+1
+[follow-up tc] ;
+U
+;
+1
+[source output] identifier,	"U".
+numeric,	1.
+eof.
+[follow-up output] identifier,	";U".
+numeric,	;1.
+eof.
+Vol
+
+dd: 3 deltas left: U
+1
+
+dd (run #3): trying 1 + 2
+U
+java printtokens.MR4_GenFollow stc.txt ftc.txt; ./../v5/pt5.exe < stc.txt > o1; ./../v5/pt5.exe < ftc.txt > o2
+***************MT****************
+[source tc] U
+[follow-up tc] ;
+U
+[source output] identifier,	"U".
+eof.
+[follow-up output] identifier,	";U".
+eof.
+Vol
+
+dd: 1 deltas left: U
+dd: done
+The 1-minimal failure-inducing input is U
+The number of tests: 6
+Removing any element will make the failure go away.
+The run time is: 0.492684841156

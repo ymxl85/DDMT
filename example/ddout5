@@ -1,0 +1,98 @@
+Simplifying failure-inducing input...
+
+or.;
+U
+12
+
+
+
+dd: 11 deltas left: or.;
+U
+12
+
+
+
+dd (run #1): trying 5 + 6
+or.;
+
+U
+12
+
+
+dd: increase granularity to 4
+
+dd (run #2): trying 2 + 3 + 3 + 3
+or
+.;
+
+U
+1
+2
+
+
+.;
+U
+12
+
+
+
+dd: 9 deltas left: .;
+U
+12
+
+
+
+dd (run #3): trying 3 + 3 + 3
+.;
+2
+
+
+
+dd: 6 deltas left: .;
+2
+
+
+
+dd (run #4): trying 3 + 3
+dd: increase granularity to 4
+
+dd (run #5): trying 1 + 1 + 2 + 2
+.
+;
+
+2
+
+
+
+.;
+
+
+.;
+2
+
+dd: 4 deltas left: .;
+2
+
+dd (run #6): trying 1 + 1 + 2
+;
+2
+
+dd: 3 deltas left: ;
+2
+
+dd (run #7): trying 1 + 2
+dd: increase granularity to 3
+
+dd (run #8): trying 1 + 1 + 1
+
+
+2
+;2
+;
+
+dd: done
+The 1-minimal failure-inducing input is ;
+2
+The number of tests: 21
+Removing any element will make the failure go away.
+The run time is: 0.0359079837799
