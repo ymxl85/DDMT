@@ -4,7 +4,8 @@ DDMT is a delta debugging approach driven by Metamorphic Testing. It integrates 
 
 ---
 
-Here is the artifact for the paper “”.
+Here is the artifact for the paper “Delta Debugging in the Absence of Test Oracles
+Through Metamorphic Testing”.
 
 This artifact contains:
 
