@@ -1,0 +1,303 @@
+Simplifying failure-inducing input...
+
+***************Test****************
+##############################expected output
+eof.
+##############################real output
+eof.
+Pass
+or.;
+U
+12
+
+***************Test****************
+##############################expected output
+keyword,	"or".
+error,	".".
+identifier,	"U".
+numeric,	12.
+eof.
+##############################real output
+keyword,	"or".
+error,	".".
+identifier,	";U".
+numeric,	12.
+eof.
+Fail
+
+dd: 10 deltas left: or.;
+U
+12
+
+
+dd (run #1): trying 5 + 5
+or.;
+
+***************Test****************
+##############################expected output
+keyword,	"or".
+error,	".".
+eof.
+##############################real output
+keyword,	"or".
+error,	".".
+eof.
+Pass
+U
+12
+
+***************Test****************
+##############################expected output
+identifier,	"U".
+numeric,	12.
+eof.
+##############################real output
+identifier,	"U".
+numeric,	12.
+eof.
+Pass
+dd: increase granularity to 4
+
+dd (run #2): trying 2 + 2 + 3 + 3
+or
+***************Test****************
+##############################expected output
+keyword,	"or".
+eof.
+##############################real output
+keyword,	"or".
+eof.
+Pass
+.;
+***************Test****************
+##############################expected output
+error,	".".
+eof.
+##############################real output
+error,	".".
+eof.
+Pass
+
+U
+
+***************Test****************
+##############################expected output
+identifier,	"U".
+eof.
+##############################real output
+identifier,	"U".
+eof.
+Pass
+12
+
+***************Test****************
+##############################expected output
+numeric,	12.
+eof.
+##############################real output
+numeric,	12.
+eof.
+Pass
+.;
+U
+12
+
+***************Test****************
+##############################expected output
+error,	".".
+identifier,	"U".
+numeric,	12.
+eof.
+##############################real output
+error,	".".
+identifier,	";U".
+numeric,	12.
+eof.
+Fail
+
+dd: 8 deltas left: .;
+U
+12
+
+
+dd (run #3): trying 2 + 3 + 3
+
+U
+12
+
+***************Test****************
+##############################expected output
+identifier,	"U".
+numeric,	12.
+eof.
+##############################real output
+identifier,	"U".
+numeric,	12.
+eof.
+Pass
+.;12
+
+***************Test****************
+##############################expected output
+error,	".".
+eof.
+##############################real output
+error,	".".
+eof.
+Pass
+.;
+U
+
+***************Test****************
+##############################expected output
+error,	".".
+identifier,	"U".
+eof.
+##############################real output
+error,	".".
+identifier,	";U".
+eof.
+Fail
+
+dd: 5 deltas left: .;
+U
+
+
+dd (run #4): trying 2 + 3
+dd: increase granularity to 4
+
+dd (run #5): trying 1 + 1 + 1 + 2
+.
+***************Test****************
+##############################expected output
+error,	".".
+eof.
+##############################real output
+error,	".".
+eof.
+Pass
+;
+***************Test****************
+##############################expected output
+eof.
+##############################real output
+eof.
+Pass
+
+
+***************Test****************
+##############################expected output
+eof.
+##############################real output
+eof.
+Pass
+U
+
+***************Test****************
+##############################expected output
+identifier,	"U".
+eof.
+##############################real output
+identifier,	"U".
+eof.
+Pass
+;
+U
+
+***************Test****************
+##############################expected output
+identifier,	"U".
+eof.
+##############################real output
+identifier,	";U".
+eof.
+Fail
+
+dd: 4 deltas left: ;
+U
+
+
+dd (run #6): trying 1 + 1 + 2
+;U
+
+***************Test****************
+##############################expected output
+eof.
+##############################real output
+eof.
+Pass
+;
+
+***************Test****************
+##############################expected output
+eof.
+##############################real output
+eof.
+Pass
+dd: increase granularity to 4
+
+dd (run #7): trying 1 + 1 + 1 + 1
+U
+***************Test****************
+##############################expected output
+identifier,	"U".
+eof.
+##############################real output
+identifier,	"U".
+eof.
+Pass
+
+
+***************Test****************
+##############################expected output
+eof.
+##############################real output
+eof.
+Pass
+;
+
+
+***************Test****************
+##############################expected output
+eof.
+##############################real output
+eof.
+Pass
+;
+U
+***************Test****************
+##############################expected output
+identifier,	"U".
+eof.
+##############################real output
+identifier,	";U".
+eof.
+Fail
+
+dd: 3 deltas left: ;
+U
+
+dd (run #8): trying 1 + 1 + 1
+
+U
+***************Test****************
+##############################expected output
+identifier,	"U".
+eof.
+##############################real output
+identifier,	"U".
+eof.
+Pass
+;U
+***************Test****************
+##############################expected output
+eof.
+##############################real output
+eof.
+Pass
+dd: done
+The 1-minimal failure-inducing input is ;
+U
+The number of tests: 25
+Removing any element will make the failure go away.
+The run time is: 0.0388212203979
