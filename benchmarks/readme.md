@@ -13,3 +13,5 @@ For example, "data:3;28;0.046361207962;=>I": the size is 3, the number of querie
 
 
 ## 2 Results for C compilers
+
+The results are summarized in [perse_ddmt_result.csv](./Compilers/perse_ddmt_result.csv)
