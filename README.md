@@ -17,6 +17,7 @@ This artifact contains:
 
 ---
 # Implementation details
+```
 DDMT/
 ├── Perse-DDMT              # implementation of the integration of Perse and MT
 ├── ddmin-DDMT/             # implementation of the integration of ddmin and MT
@@ -27,7 +28,7 @@ DDMT/
 ├── benchmarks/             # Test applications
 │   ├── Compilers/          # results and subjects of C compilers
 │   ├── Siemens/            # summary of results on Siemens programs
-
+```
 ---
 
 The experimental operating environment are described as below.
