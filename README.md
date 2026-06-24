@@ -16,7 +16,19 @@ This artifact contains:
 > Experimental results.
 
 ---
+# Implementation details
+DDMT/
+├── Perse-DDMT              # implementation of the integration of Perse and MT
+├── ddmin-DDMT/             # implementation of the integration of ddmin and MT
+│   ├── src/                # implementaion of auxiliary functions and MRs for subject programs
+│   ├── printtokens/        # scripts for runing ddmin-DDMT
+│   ├── replace/            # scripts for runing ddmin-DDMT
+│   └── schedule/           # scripts for runing ddmin-DDMT
+├── benchmarks/             # Test applications
+│   ├── Compilers/          # results and subjects of C compilers
+│   ├── Siemens/            # summary of results on Siemens programs
 
+---
 
 The experimental operating environment are described as below.
 
