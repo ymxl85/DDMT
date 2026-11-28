@@ -15,3 +15,15 @@ For example, "data:3;28;0.046361207962;=>I": the size is 3, the number of querie
 ## 2 Results for C compilers
 
 The results are summarized in [perse_ddmt_result.csv](./Compilers/perse_ddmt_result.csv)
+
+
+## 2 Results for C image classifiers
+
+The overall results are summarized in [Summary of average-size-query-time.xls](./ImageClassifiers/Summary of average-size-query-time.xls)
+
+The detailed results for MobileNet: [results_mobilenet.csv](./ImageClassifiers/results_mobilenet.csv)
+
+The detailed resutls for ResNet: [results_resnet.csv](./ImageClassifiers/results_resnet.csv)
+
+The detailed results for VGG: [results_vgg.csv](./ImageClassifiers/results_vgg.csv)
+
