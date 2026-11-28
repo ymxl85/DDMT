@@ -1,1 +1,11 @@
+DDImage_DDMT.py: code for DDImage<sub>DDMT</sub>, and the code implementing the three MRs, MR<sub>flip</sub>,  MR<sub>rotate+5</sub>, and  MR<sub>rotate-5</sub>.
+
+
+Running  DDImage<sub>DDMT</sub> on three classificaiton models:
+
+python mobilenet_ddmt.py
+
+python resnet_ddmt.py
+
+python vgg_ddmt.py
 
