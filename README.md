@@ -40,7 +40,7 @@ DDMT/
 ├── benchmarks/             # Experimental results
 │   ├── Compilers/          # results and subjects of C compilers
 │   ├── Siemens/            # summary of results on Siemens programs
-│   ├── Siemens/            # summary of results on Image classifiers
+│   ├── ImageClassifiers/            # summary of results on Image classifiers
 
 ```
 ---
