@@ -10,9 +10,11 @@ Through Metamorphic Testing*”.
 This artifact contains:
 
 > Implementation of DDMT with five delta debugging variants
-> > ddmin-DDMT
-> > 
-
+> > **ddmin-DDMT**
+> > **Perses-DDMT**
+> > **ProbDD-DDMT**
+> > **WDD-DDMT**
+> > **DDImage-DDMT**
 > Experiment Replication Package.
 
 > Experimental results.
