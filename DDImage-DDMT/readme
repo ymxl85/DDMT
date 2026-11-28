@@ -1,11 +1,21 @@
-DDImage_DDMT.py: code for DDImage<sub>DDMT</sub>, and the code implementing the three MRs, MR<sub>flip</sub>,  MR<sub>rotate+5</sub>, and  MR<sub>rotate-5</sub>.
+# DDMT for Image Classification
 
----
-Running  DDImage<sub>DDMT</sub> on three classificaiton models:
+This repository provides the implementation of DDImage<sub>DDMT</sub> applied to image classification tasks.
 
+## Implementation
+
+The main implementation and model definitions are organized in the following files:
+
+- `DDImage_DDMT.py`: implementation of DDMT for image classification, code for MR and three models (mobilenet, resnet, and vgg)
+- `mobilenet_ddmt.py`: interface for debugging mobilenet
+- `resnet_ddmt.py`: interface for debugging resnet
+- `vgg_ddmt.py`: interface for debugging vgg
+
+## How to Apply
+
+Run the corresponding script directly for each backbone:
+
+```bash
 python mobilenet_ddmt.py
-
 python resnet_ddmt.py
-
 python vgg_ddmt.py
----
