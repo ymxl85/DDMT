@@ -25,6 +25,9 @@ DDMT/
 │   ├── printtokens/        # scripts for runing ddmin-DDMT
 │   ├── replace/            # scripts for runing ddmin-DDMT
 │   └── schedule/           # scripts for runing ddmin-DDMT
+├── DDImage-DDMT/             # implementation of the integration of DDImage and MT
+│   ├── src/                # implementaion of DDImage_DDMT and MRs for image classification
+│   ├── run                # steps for running DDImage_DDMT
 ├── benchmarks/             # Test applications
 │   ├── Compilers/          # results and subjects of C compilers
 │   ├── Siemens/            # summary of results on Siemens programs
