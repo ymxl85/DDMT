@@ -8,3 +8,12 @@ For ddmin-DDMT:
 > 
 > scripts for implementing MRs of different subject programs can be found under [MR](./src/MR)
 
+## How to Apply
+
+Run the corresponding script directly for each subject:
+
+```bash
+/bin/sh printtokens/run.sh
+/bin/sh replace/run.sh
+/bin/sh schedule/run.sh
+
