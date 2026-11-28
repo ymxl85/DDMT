@@ -28,9 +28,11 @@ DDMT/
 ├── DDImage-DDMT/             # implementation of the integration of DDImage and MT
 │   ├── src/                # implementaion of DDImage_DDMT and MRs for image classification
 │   ├── run                # steps for running DDImage_DDMT
-├── benchmarks/             # Test applications
+├── benchmarks/             # Experimental results
 │   ├── Compilers/          # results and subjects of C compilers
 │   ├── Siemens/            # summary of results on Siemens programs
+│   ├── Siemens/            # summary of results on Image classifiers
+
 ```
 ---
 
